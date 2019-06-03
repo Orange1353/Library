@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler navbar-light bg-light" type="button" data-target="#navbarNav" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="../../static/StartPage.html">
+        <img src="../../static/images/book-logo-2.png" width="40" height="30" class="d-inline-block">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="active"> <a class="nav-link" href="../../static/StartPage.html">Online Library</a> </li>
+            <li> <a class="nav-link" href="../../static/Catalog.html">Catalog</a> </li>
+            <li> <a class="nav-link" href="../../static/Contact.html">Contacts</a> </li>
+        </ul>
+        <ul class="navbar-nav navbar-right ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="../../static/Order.html"><span class="fas fa-book-open"></span> Order</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#"><span class="fas fa-user"></span> Account</a> </li>
+        </ul>
+    </div>
+</nav>
+<br>
+
+<div  class="container">
+    <a href="/AdminUsers" class="btn btn-light orange btn-sm">List users</a>
+    <a href="#" class="btn btn-secondary btn-sm disabled">List books</a>
+    <br>
+    <br>
+</div>
+
+<div class="container">
+    <h5 style="color: #95999c">All books</h5>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">title</th>
+            <th scope="col">publishing</th>
+            <th scope="col">author</th>
+            <th scope="col">category</th>
+            <th scope="col">year</th>
+            <th scope="col">typeAccess</th>
+            <th scope="col"></th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="book:${books}">
+            <th scope="row" th:text="${book.id}"></th>
+            <td th:text="${book.title}"></td>
+            <td th:text="${book.publishing}"></td>
+            <td th:text="${book.author}"></td>
+            <td th:text="${book.category}"></td>
+            <td th:text="${book.year}"></td>
+            <td th:text="${book.typeAccess}"></td>
+            <td>
+                <form class="text-right" method="post" action="/deleteBook">
+                    <button th:name="btnId" th:value="${book.id}" class="btn btn-outline-danger btn-sm"> x Remove</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer ">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a class="nav-link-footer" href="https://getbootstrap.com"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

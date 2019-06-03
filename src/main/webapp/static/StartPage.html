@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler navbar-light bg-light" type="button" data-target="#navbarNav" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="images/book-logo-2.png" width="40" height="30" class="d-inline-block">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="active"> <a class="nav-link" href="#">Онлайн библиотека</a> </li>
+                <li> <a class="nav-link" href="Catalog.html">Каталог</a> </li>
+                <li> <a class="nav-link" href="Contact.html">Контакты</a> </li>
+            </ul>
+            <ul class="navbar-nav navbar-right ml-auto">
+                <li class="nav-item"> <a class="nav-link" href="Order.html"><span class="fas fa-book-open"></span> Корзина</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="Acc.html"><span class="fas fa-user"></span> Личный кабинет</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <!-- Start BookSide Area -->
+    <div class="container">
+        <div class="row justify-content-md-center col-md-auto">
+            <div class="col">
+                <input id="searchinput" class="form-control input-lg" type="search" placeholder="Введите название или автора" aria-label="Search">
+            </div>
+            <button class="btn btn-outline orange" type="submit">Найти</button>
+        </div>
+        <br>
+
+        <!-- Start New Books -->
+        <h2 style="color: #95999c">Новинки</h2>
+        <div class="container text-center my-3">
+            <div class="row mx-auto my-auto">
+                <div id="recipeCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <figure class="d-block col-3">
+                                <a href="#x" class="thumbnail"><img src="images/book1.jpeg" width="220" alt="1" class="img-fluid img-thumbnail"></a>
+                                <figcaption class="card-body">
+                                   <span class="badge badge-pill badge-success">Есть в наличии</span>
+                                    <h6 class="card-title">Правила дорожного движения Российской Федерации на 2019 год </h6>
+                                    <p class="card-text">Жульнев Н.Я.</p>
+                                    <a href="#" class="btn btn-block  orange">Подробнее</a>
+                                    <a href="#" class="btn btn-block btn-outline-success">Взять книгу</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="d-block col-3 ">
+                                <a href="#x" class="thumbnail"><img src="images/book2.jpg" width="220" alt="1" class="img-fluid img-thumbnail"></a>
+                                <figcaption class="card-body">
+                                    <span class="badge badge-pill badge-success">Есть в наличии</span>
+                                    <h6 class="card-title">Богатый папа, бедный папа</h6>
+                                    <p class="card-text">Кийосаки Роберт Т.</p>
+                                    <a href="#" class="btn btn-block  orange">Подробнее</a>
+                                    <a href="#" class="btn btn-block btn-outline-success">Взять книгу</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="d-block col-3 ">
+                                <a href="#x" class="thumbnail"><img src="images/book3.jpg" width="220" alt="1" class="img-fluid img-thumbnail"></a>
+                                <figcaption class="card-body">
+                                    <span class="badge badge-pill badge-success">Есть в наличии</span>
+                                    <h6 class="card-title">Самый богатый человек в Вавилоне</h6>
+                                    <p class="card-text">Клейсон Джордж Сэмюэль</p>
+                                    <a href="#" class="btn btn-block  orange">Подробнее</a>
+                                    <a href="#" class="btn btn-block btn-outline-success">Взять книгу</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="d-block col-3 ">
+                                <a href="#x" class="thumbnail"><img src="images/book4.jpg" width="220" alt="1" class="img-fluid img-thumbnail"></a>
+                                <figcaption class="card-body">
+                                    <span class="badge badge-pill badge-success">Есть в наличии</span>
+                                    <h6 class="card-title">Как разговаривать с кем угодно, когда угодно и где угодно </h6>
+                                    <p class="card-text">Кинг Ларри</p>
+                                    <a href="#" class="btn btn-block  orange">Подробнее</a>
+                                    <a href="#" class="btn btn-block btn-outline-success">Взять книгу</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="d-block col-3 ">
+                                <a href="#x" class="thumbnail"><img src="images/book5.jpeg" width="220" alt="1" class="img-fluid img-thumbnail"></a>
+                                <figcaption class="card-body">
+                                    <span class="badge badge-pill badge-success">Есть в наличии</span>
+                                    <h6 class="card-title">Конституция РФ (с гимном России)</h6>
+                                    <p class="card-text"> </p>
+                                    <a href="#" class="btn btn-block orange">Подробнее</a>
+                                    <a href="#" class="btn btn-block btn-outline-success">Взять книгу</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="d-block col-3 ">
+                                <a href="#x" class="thumbnail"><img src="images/book6.jpeg" width="220" height="250" alt="1" class="img-fluid img-thumbnail"></a>
+                                <figcaption class="card-body">
+                                    <span class="badge badge-pill badge-success">Есть в наличии</span>
+                                    <h6 class="card-title">Как нарисовать все что угодно</h6>
+                                    <p class="card-text">Барбер Баррингтон</p>
+                                    <a href="#" class="btn btn-block orange">Подробнее</a>
+                                    <a href="#" class="btn btn-block btn-outline-success">Взять книгу</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End New Books -->
+
+        <br>
+
+        <!-- Start Popular Books -->
+        <h2 style="color: #95999c">Популярные</h2>
+        <div class="container text-center my-3">
+            <div class="row mx-auto my-auto">
+                <div id="recipeCarousel-Popular" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <<div class="carousel-item active">
+                        <div class="d-block col-3 img-fluid">
+                            <a href="#x" class="thumbnail"><img src="images/book1.jpeg" width="220" alt="1" class="img-fluid img-thumbnail"></a>
+                            <div class="card-body">
+                                <span class="badge badge-pill badge-success">Есть в наличии</span>
+                                <h6 class="card-title">Правила дорожного движения Российской Федерации на 2019 год </h6>
+                                <p class="card-text">Жульнев Н.Я.</p>
+                                <a href="#" class="btn btn-block  orange">Подробнее</a>
+                                <a href="#" class="btn btn-block btn-outline-success">Взять книгу</a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="carousel-item">
+                            <div class="d-block col-3 img-fluid">
+                                <a href="#x" class="thumbnail"><img src="images/book2.jpg" width="220" alt="1" class="img-fluid img-thumbnail"></a>
+                                <div class="card-body">
+                                    <span class="badge badge-pill badge-success">Есть в наличии</span>
+                                    <h6 class="card-title">Богатый папа, бедный папа</h6>
+                                    <p class="card-text">Кийосаки Роберт Т.</p>
+                                    <a href="#" class="btn btn-block  orange">Подробнее</a>
+                                    <a href="#" class="btn btn-block btn-outline-success">Взять книгу</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block col-3 img-fluid">
+                                <a href="#x" class="thumbnail"><img src="images/book3.jpg" width="220" alt="1" class="img-fluid img-thumbnail"></a>
+                                <div class="card-body">
+                                    <span class="badge badge-pill badge-success">Есть в наличии</span>
+                                    <h6 class="card-title">Самый богатый человек в Вавилоне</h6>
+                                    <p class="card-text">Клейсон Джордж Сэмюэль</p>
+                                    <a href="#" class="btn btn-block  orange">Подробнее</a>
+                                    <a href="#" class="btn btn-block btn-outline-success">Взять книгу</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block col-3 img-fluid">
+                                <a href="#x" class="thumbnail"><img src="images/book8.jpg" width="220" alt="1" class="img-fluid img-thumbnail"></a>
+                                <div class="card-body">
+                                    <span class="badge badge-pill badge-warning">Скоро будет доступна</span>
+                                    <h6 class="card-title">НИ СЫ. Будь уверен в своих силах и не позволяй сомнениям мешать тебе двигаться вперед </h6>
+                                    <p class="card-text">Синсеро Джен</p>
+                                    <a href="#" class="btn btn-block  orange">Подробнее</a>
+                                    <a href="#" class="btn btn-block btn-outline-warning">Забронировать книгу</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block col-3 img-fluid">
+                                <a href="#x" class="thumbnail"><img src="images/book9.jpg" width="220" alt="1" class="img-fluid img-thumbnail"></a>
+                                <div class="card-body">
+                                    <span class="badge badge-pill badge-warning">У пользователя</span>
+                                    <h6 class="card-title">Тонкое искусство пофигизма: Парадоксальный способ жить счастливо </h6>
+                                    <p class="card-text">Мэнсон Марк</p>
+                                    <a href="#" class="btn btn-block  orange">Подробнее</a>
+                                    <a href="#" class="btn btn-block btn-outline-warning">Забронировать книгу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#recipeCarousel-Popular" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#recipeCarousel-Popular" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End Popular Books -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer ">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a class="nav-link-footer" href="https://getbootstrap.com"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+    <script js>
+        $('#recipeCarousel').carousel({
+            interval: 10000
+        })
+
+        $('.carousel .carousel-item').each(function(){
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i=0;i<2;i++) {
+                next=next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+
+                next.children(':first-child').clone().appendTo($(this));
+            }
+        });
+
+    </script>
+</body>
+</html>
